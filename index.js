@@ -1,5 +1,13 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for (let index1 = 0; index1 < array.length; index1++) {
+    for (let index2 = index1 + 1; index2 < array.length; index2++) {
+      if (array[index1] + array[index2] === target) {
+        return true;
+      }
+    }
+  }
+  return false;
 }
 
 /* 
